@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
+body {
+  background-color: black;
+  color: white;
+}
+.container {
+  margin-top: 100px;
+}
+h1 {
+  text-align: center;
+  word-spacing: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.main {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  font-family: "Orbitron", sans-serif;
+}
+span {
+  font-family: "Nunito Sans", sans-serif;
+}
+button {
+  color: white;
+  background-color: black;
+  border-color: white;
+  font-family: "Nunito Sans", sans-serif;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: x-large;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.3s ease-in;
+}
+.pause:hover {
+  background-color: rgb(32, 30, 185);
+}
+.start:hover {
+  background-color: rgb(66, 179, 66);
+}
+.reset:hover {
+  background-color: rgb(192, 32, 32);
+}
+.start:active {
+  background-color: #0056b3;
+}
+
+.start:focus {
+  box-shadow: 0px 7px 10px rgb(66, 179, 66);
+}
+.pause:focus {
+  background-color: rgb(32, 30, 185);
+  box-shadow: 0px 7px 10px #0144ff;
+}
+.reset:focus {
+  box-shadow: 0 0 10px #eb0909;
+  box-shadow: 0px 7px 10px #eb0909;
+}
