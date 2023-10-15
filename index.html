@@ -9,20 +9,27 @@
   <body>
     <h1>Stop Watch</h1>
     <div class="container">
-      <div class="main">
-        <div class="sec">00</div>
+      <div class="main space">
+        <p class="hour">00</p>
         <span>:</span>
-        <div class="min">00</div>
+        <p class="min">00</p>
         <span>:</span>
-        <div class="hour">00</div>
+        <p class="sec">00</p>
+        <span>:</span>
+        <p class="mili">00</p>
       </div>
-
       <div class="main">
-        <button class="start">Start</button>
-        <button class="pause">Pause</button>
-        <button class="reset">Reset</button>
+        <button class="btn start">Start</button>
+        <button class="btn pause">Pause</button>
+        <button class="btn reset">Reset</button>
+        <button class="btn capture">Capture</button>
       </div>
     </div>
+    <div class="result">
+      <button class="delete">Delete</button>
+      <ol class="captured"></ol>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>

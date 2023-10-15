@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200&display=swap");
 body {
   background-color: black;
   color: white;
@@ -22,7 +23,7 @@ h1 {
 span {
   font-family: "Nunito Sans", sans-serif;
 }
-button {
+.btn {
   color: white;
   background-color: black;
   border-color: white;
@@ -34,29 +35,80 @@ button {
   padding: 10px;
   transition: 0.3s ease-in;
 }
+.hour,
+.sec,
+.mili,
+.min {
+  width: 40px;
+  padding: 0px 96px 0px 10px;
+}
+.capture {
+  margin-left: 40px;
+}
+.capture:hover {
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+}
+.capture:active {
+  color: black;
+  font-weight: bolder;
+  background-color: rgb(231, 229, 229);
+}
+.space {
+  gap: 17px;
+}
 .pause:hover {
   background-color: rgb(32, 30, 185);
 }
 .start:hover {
-  background-color: rgb(66, 179, 66);
+  background-color: rgb(35, 122, 35);
   box-shadow: 0px 7px 10px #00ff15;
 }
 .reset:hover {
   background-color: rgb(192, 32, 32);
 }
-.start:active {
-  background-color: #0056b3;
-}
-
 .start:focus {
-  box-shadow: 0px 7px 10px rgb(66, 179, 66);
   box-shadow: 0px 7px 10px #00ff15;
 }
 .pause:focus {
-  background-color: rgb(32, 30, 185);
   box-shadow: 0px 7px 10px #0144ff;
 }
 .reset:focus {
-  box-shadow: 0 0 10px #eb0909;
   box-shadow: 0px 7px 10px #eb0909;
+}
+.result {
+  position: relative;
+  margin-top: 54px;
+  background-color: white;
+  padding: 10px 0px;
+  border-radius: 0px 10px 10px 10px;
+  min-height: 350px;
+  width: 50%;
+}
+li {
+  padding: 8px 0px;
+  font-size: x-large;
+  color: black;
+  font-weight: 500;
+  font-family: "nunito", sans-serif;
+}
+.delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2323;
+  color: black;
+  background-color: rgb(226, 226, 226);
+  border-color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: x-large;
+  margin: 10px;
+  transition: 0.2s ease-in-out;
+  padding: 8px;
+}
+.delete:active {
+  box-shadow: 7px 5px 1px 1px rgb(146, 146, 146);
 }
