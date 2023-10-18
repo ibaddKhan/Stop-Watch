@@ -2,11 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200&display=swap");
 body {
-  background-color: black;
+  background-color: #0b101b;
   color: white;
 }
+@media only screen and (max-width: 600px) {
+  .hour,
+  .sec,
+  .mili,
+  .min {
+    font-size: 70px;
+    width: 30px;
+    padding: 0px 40px 0px 6px;
+  }
+  .space {
+    gap: 7px;
+  }
+}
 .container {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 h1 {
   text-align: center;
@@ -85,6 +98,7 @@ span {
   border-radius: 0px 10px 10px 10px;
   min-height: 350px;
   width: 50%;
+  min-width: 50vw;
 }
 li {
   padding: 8px 0px;
