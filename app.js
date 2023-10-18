@@ -79,4 +79,5 @@ reset.addEventListener("click", () => {
   min.innerHTML = "00";
   hour.innerHTML = "00";
   start.disabled = false;
+  capture.disabled = true;
 });
