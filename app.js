@@ -55,21 +55,23 @@ start.addEventListener("click", () => {
     }
   }, 10);
   start.disabled = true;
-  capture.addEventListener("click", () => {
-    const captured = document.querySelector(".captured");
-    const h = hour.innerHTML;
-    const m = min.innerHTML;
-    const s = sec.innerHTML;
-    const ms = mili.innerHTML;
-    captured.innerHTML += `<li>${h} : ${m} : ${s} : ${ms}</li><br>`;
-    del.addEventListener("click", () => {
-      captured.innerHTML = "";
-    });
+  capture.disabled = false;
+});
+capture.addEventListener("click", () => {
+  const captured = document.querySelector(".captured");
+  const h = hour.innerHTML;
+  const m = min.innerHTML;
+  const s = sec.innerHTML;
+  const ms = mili.innerHTML;
+  captured.innerHTML += `<li>${h} : ${m} : ${s} : ${ms}</li><br>`;
+  del.addEventListener("click", () => {
+    captured.innerHTML = "";
   });
 });
 pause.addEventListener("click", () => {
   clearInterval(interval);
   start.disabled = false;
+  capture.disabled = false;
 });
 
 reset.addEventListener("click", () => {
