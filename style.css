@@ -6,20 +6,9 @@ body {
   color: white;
 }
 @media only screen and (max-width: 600px) {
-  .hour,
-  .sec,
-  .mili,
-  .min {
-    font-size: 70px;
-    width: 30px;
-    padding: 0px 40px 0px 6px;
+  .result {
+    width: 100%;
   }
-  .space {
-    gap: 7px;
-  }
-}
-.container {
-  margin-top: 30px;
 }
 h1 {
   text-align: center;
@@ -48,13 +37,14 @@ span {
   padding: 10px;
   transition: 0.3s ease-in;
 }
-.hour,
+/* .hour,
 .sec,
 .mili,
 .min {
-  width: 40px;
+  width: 2%;
+  position: relative;
   padding: 0px 96px 0px 10px;
-}
+} */
 .capture {
   margin-left: 40px;
 }
@@ -68,9 +58,9 @@ span {
   font-weight: bolder;
   background-color: rgb(231, 229, 229);
 }
-.space {
+/* .space {
   gap: 17px;
-}
+} */
 .pause:hover {
   background-color: rgb(32, 30, 185);
 }
@@ -98,7 +88,6 @@ span {
   border-radius: 0px 10px 10px 10px;
   min-height: 350px;
   width: 50%;
-  min-width: 50vw;
 }
 li {
   padding: 8px 0px;
@@ -125,4 +114,32 @@ li {
 }
 .delete:active {
   box-shadow: 7px 5px 1px 1px rgb(146, 146, 146);
+} /* Apply the "Nunito Sans" font and increase font size and weight */
+.main-2 {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px; /* Increase font size */
+  font-weight: 500; /* Adjust font weight */
+}
+
+/* Style the colon (:) elements */
+span {
+  margin: 0 30px; /* Add more space around colons */
+}
+
+/* Adjust font size for different screen sizes */
+@media screen and (max-width: 768px) {
+  .main {
+    font-size: 24px; /* Decrease font size for medium screens */
+  }
+}
+
+/* Adjust font size for smaller screens */
+@media screen and (max-width: 480px) {
+  .main {
+    font-size: 18px; /* Decrease font size for small screens */
+  }
 }
