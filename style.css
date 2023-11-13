@@ -1,85 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@200&display=swap");
+
 body {
   background-color: #0b101b;
   color: white;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
 }
+
 @media only screen and (max-width: 600px) {
   .result {
     width: 100%;
   }
+  .main {
+    font-size: 40px;
+  }
+  .main-2 {
+    font-size: 3rem;
+  }
 }
+
 h1 {
   text-align: center;
   word-spacing: 10px;
   font-family: "Orbitron", sans-serif;
+  margin: 20px 0;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 .main {
-  justify-content: center;
   display: flex;
   align-items: center;
   font-size: 80px;
   font-family: "Orbitron", sans-serif;
+  margin-bottom: 20px;
 }
-span {
+
+.colons {
+  position: relative;
   font-family: "Nunito Sans", sans-serif;
+  width: 1px;
 }
-.btn {
+/* .btn {
   color: white;
   background-color: black;
   border-color: white;
   font-family: "Nunito Sans", sans-serif;
   cursor: pointer;
   border-radius: 15px;
-  font-size: x-large;
+  font-size: 1.5em;
   margin: 10px;
-  padding: 10px;
+  padding: 12px 24px;
   transition: 0.3s ease-in;
-}
-/* .hour,
+} */
+
+.hour,
 .sec,
 .mili,
 .min {
-  width: 2%;
+  width: 10vw;
   position: relative;
-  padding: 0px 96px 0px 10px;
-} */
+  padding: 0px 3vw 0px 2vw;
+}
+
 .capture {
-  margin-left: 40px;
+  margin-left: 1.5em;
 }
-.capture:hover {
-  color: black;
-  font-weight: bolder;
+
+.capture:hover,
+.delete:hover,
+.pause:hover,
+.start:hover,
+.reset:hover {
   background-color: white;
-}
-.capture:active {
   color: black;
   font-weight: bolder;
+}
+
+.capture:active,
+.delete:active,
+.pause:active,
+.start:active,
+.reset:active {
   background-color: rgb(231, 229, 229);
 }
-/* .space {
-  gap: 17px;
-} */
-.pause:hover {
-  background-color: rgb(32, 30, 185);
-}
-.start:hover {
-  background-color: rgb(35, 122, 35);
-  box-shadow: 0px 7px 10px #00ff15;
-}
-.reset:hover {
-  background-color: rgb(192, 32, 32);
-}
-.start:focus {
-  box-shadow: 0px 7px 10px #00ff15;
-}
-.pause:focus {
-  box-shadow: 0px 7px 10px #0144ff;
-}
-.reset:focus {
-  box-shadow: 0px 7px 10px #eb0909;
-}
+
 .result {
   position: relative;
   margin-top: 54px;
@@ -89,13 +102,20 @@ span {
   min-height: 350px;
   width: 50%;
 }
+
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 li {
   padding: 8px 0px;
-  font-size: x-large;
+  font-size: 1.5em;
   color: black;
   font-weight: 500;
   font-family: "nunito", sans-serif;
 }
+
 .delete {
   position: absolute;
   top: 0;
@@ -107,39 +127,33 @@ li {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   border-radius: 15px;
-  font-size: x-large;
+  font-size: 1.5em;
   margin: 10px;
   transition: 0.2s ease-in-out;
   padding: 8px;
 }
+
 .delete:active {
   box-shadow: 7px 5px 1px 1px rgb(146, 146, 146);
-} /* Apply the "Nunito Sans" font and increase font size and weight */
+}
+
 .main-2 {
   font-family: "Orbitron", sans-serif;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  font-size: 90px; /* Increase font size */
-  font-weight: 500; /* Adjust font weight */
+  font-size: 5rem;
+  font-weight: 500;
 }
 
-/* Style the colon (:) elements */
-span {
-  margin: 0 30px; /* Add more space around colons */
-}
-
-/* Adjust font size for different screen sizes */
 @media screen and (max-width: 768px) {
-  .main {
-    font-size: 24px; /* Decrease font size for medium screens */
+  .main-2 {
+    font-size: 3rem;
   }
 }
 
-/* Adjust font size for smaller screens */
 @media screen and (max-width: 480px) {
   .main {
-    font-size: 18px; /* Decrease font size for small screens */
+    font-size: 24px;
   }
 }
